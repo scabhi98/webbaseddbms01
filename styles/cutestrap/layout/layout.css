@@ -7,7 +7,7 @@
 
 /* Section Styles */
 .cs-header{
-    background-image: url('/btimg.jpeg');
+    background-image: url('../../../btimg.jpeg');
     background-size: cover;
 }
 .cs-header-overlay{
