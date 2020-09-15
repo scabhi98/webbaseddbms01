@@ -1,0 +1,38 @@
+/* Typography */
+
+@import url("typography/typography.css");
+
+/* Components */
+
+/* Navbar Styling */
+@import url("components/navbar.css");
+/* Cutestrap Cards */
+@import url("components/cards.css");
+/* Banner Styles */
+@import url("components/banner.css");
+/* Elevation */
+@import url("components/elevation.dark.css");
+
+/* Layout Styles */
+
+@import url("layout/layout.css");
+/* Flexbox Setup */
+@import url("layout/flexbox.css");
+
+
+
+/* Element Styles */
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(15, 7, 0);
+}
+
+body *{
+    color: white;
+}
+
+address{
+    margin: 1rem 1.2rem;
+}

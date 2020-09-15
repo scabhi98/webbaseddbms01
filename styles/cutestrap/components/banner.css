@@ -1,0 +1,15 @@
+.cs-banner{
+    height: 95%;
+    flex-direction: row-reverse;
+    
+    height: 65vh;
+}
+
+
+.cs-banner > * {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 8vw 0 20vw;
+    background: linear-gradient(to left,#291400, #291400de, #2914009e, #200c0100);
+}

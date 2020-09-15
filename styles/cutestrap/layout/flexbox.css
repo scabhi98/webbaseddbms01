@@ -1,0 +1,273 @@
+[class^="cs-flex-"], [class^="cs-layout-"] {
+    box-sizing: border-box;
+}
+.cs-layout-row{
+    display: flex;
+    flex-direction: row;
+}
+.cs-layout-column{
+    display: flex;
+    flex-direction: column;
+}
+/* Flex Items*/
+.cs-spacer, .cs-flex-grow, .cs-flex-100{
+    flex: 1 1 auto;
+}
+.cs-flex-shrink, .cs-flex-0{
+    flex: 0 1 auto;
+}
+.cs-flex{
+    -webkit-flex: 1 1 0%;
+        -ms-flex: 1 1 0%;
+            flex: 1 1 0%;
+}
+.cs-flex-5{
+    -webkit-flex: 1 1 5%;
+        -ms-flex: 1 1 5%;
+            flex: 1 1 5%;
+}
+.cs-flex-10{
+    -webkit-flex: 1 1 10%;
+        -ms-flex: 1 1 10%;
+            flex: 1 1 10%;   
+}
+.cs-flex-15{
+    -webkit-flex: 1 1 15%;
+        -ms-flex: 1 1 15%;
+            flex: 1 1 15%;
+}
+.cs-flex-20{
+    -webkit-flex: 1 1 20%;
+        -ms-flex: 1 1 20%;
+            flex: 1 1 20%;
+}
+.cs-flex-25{
+    -webkit-flex: 1 1 25%;
+        -ms-flex: 1 1 25%;
+            flex: 1 1 25%;
+}
+.cs-flex-30{
+    -webkit-flex: 1 1 30%;
+        -ms-flex: 1 1 30%;
+            flex: 1 1 30%;
+}
+.cs-flex-35{
+    -webkit-flex: 1 1 35%;
+        -ms-flex: 1 1 35%;
+            flex: 1 1 35%;
+}
+.cs-flex-40{
+    -webkit-flex: 1 1 40%;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+}
+.cs-flex-45{
+    -webkit-flex: 1 1 45%;
+        -ms-flex: 1 1 45%;
+            flex: 1 1 45%;
+}
+.cs-flex-50{
+    -webkit-flex: 1 1 50%;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+}
+.cs-flex-55{
+    -webkit-flex: 1 1 55%;
+        -ms-flex: 1 1 55%;
+            flex: 1 1 55%;
+}
+.cs-flex-60{
+    -webkit-flex: 1 1 60%;
+        -ms-flex: 1 1 60%;
+            flex: 1 1 60%;
+}
+.cs-flex-65{
+    -webkit-flex: 1 1 65%;
+        -ms-flex: 1 1 65%;
+            flex: 1 1 65%;
+}
+.cs-flex-70{
+    -webkit-flex: 1 1 70%;
+        -ms-flex: 1 1 70%;
+            flex: 1 1 70%;
+}
+.cs-flex-75{
+    -webkit-flex: 1 1 75%;
+        -ms-flex: 1 1 75%;
+            flex: 1 1 75%;
+}
+.cs-flex-80{
+    -webkit-flex: 1 1 80%;
+        -ms-flex: 1 1 80%;
+            flex: 1 1 80%;
+}
+.cs-flex-90{
+    -webkit-flex: 1 1 90%;
+        -ms-flex: 1 1 90%;
+            flex: 1 1 90%;
+}
+.cs-flex-95{
+    -webkit-flex: 1 1 95%;
+        -ms-flex: 1 1 95%;
+            flex: 1 1 95%;
+}
+.cs-flex-100{
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+}
+.cs-flex-33{
+    -webkit-flex: 1 1 calc(100% / 3);
+        -ms-flex: 1 1 calc(100% / 3);
+            flex: 1 1 calc(100% / 3);
+}
+.cs-flex-66{
+    -webkit-flex: 1 1 calc(200% / 3);
+        -ms-flex: 1 1 calc(200% / 3);
+            flex: 1 1 calc(200% / 3);
+}
+.cs-layout-row [class^="cs-flex-"]{
+    max-height: 100%;
+}
+.cs-layout-row .cs-flex-5 {
+  max-width: 5%;
+}
+.cs-layout-row .cs-flex-10 {
+  max-width: 10%;
+}
+.cs-layout-row .cs-flex-15 {
+  max-width: 15%;
+}
+.cs-layout-row .cs-flex-20 {
+  max-width: 20%;
+}
+.cs-layout-row .cs-flex-25 {
+  max-width: 25%;
+}
+.cs-layout-row .cs-flex-30 {
+  max-width: 30%;
+}
+.cs-layout-row .cs-flex-35 {
+  max-width: 35%;
+}
+.cs-layout-row .cs-flex-40 {
+  max-width: 40%;
+}
+.cs-layout-row .cs-flex-45 {
+  max-width: 45%;
+}
+.cs-layout-row .cs-flex-50 {
+  max-width: 50%;
+}
+.cs-layout-row .cs-flex-55 {
+  max-width: 55%;
+}
+.cs-layout-row .cs-flex-60 {
+  max-width: 60%;
+}
+.cs-layout-row .cs-flex-65 {
+  max-width: 65%;
+}
+.cs-layout-row .cs-flex-70 {
+  max-width: 70%;
+}
+.cs-layout-row .cs-flex-75 {
+  max-width: 75%;
+}
+.cs-layout-row .cs-flex-80 {
+  max-width: 80%;
+}
+.cs-layout-row .cs-flex-85 {
+  max-width: 85%;
+}
+.cs-layout-row .cs-flex-90 {
+  max-width: 90%;
+}
+.cs-layout-row .cs-flex-95 {
+  max-width: 95%;
+}
+.cs-layout-row .cs-flex-100 {
+  max-width: 100%;
+}
+.cs-layout-column [class^="cs-flex-"]{
+    max-width: 100%;
+}
+.cs-layout-column .cs-flex-5 {
+  max-height: 5%;
+}
+.cs-layout-column .cs-flex-10 {
+  max-height: 10%;
+}
+.cs-layout-column .cs-flex-15 {
+  max-height: 15%;
+}
+.cs-layout-column .cs-flex-20 {
+  max-height: 20%;
+}
+.cs-layout-column .cs-flex-25 {
+  max-height: 25%;
+}
+.cs-layout-column .cs-flex-30 {
+  max-height: 30%;
+}
+.cs-layout-column .cs-flex-35 {
+  max-height: 35%;
+}
+.cs-layout-column .cs-flex-40 {
+  max-height: 40%;
+}
+.cs-layout-column .cs-flex-45 {
+  max-height: 45%;
+}
+.cs-layout-column .cs-flex-50 {
+  max-height: 50%;
+}
+.cs-layout-column .cs-flex-55 {
+  max-height: 55%;
+}
+.cs-layout-column .cs-flex-60 {
+  max-height: 60%;
+}
+.cs-layout-column .cs-flex-65 {
+  max-height: 65%;
+}
+.cs-layout-column .cs-flex-70 {
+  max-height: 70%;
+}
+.cs-layout-column .cs-flex-75 {
+  max-height: 75%;
+}
+.cs-layout-column .cs-flex-80 {
+  max-height: 80%;
+}
+.cs-layout-column .cs-flex-85 {
+  max-height: 85%;
+}
+.cs-layout-column .cs-flex-90 {
+  max-height: 90%;
+}
+.cs-layout-column .cs-flex-95 {
+  max-height: 95%;
+}
+.cs-layout-column .cs-flex-100 {
+  max-height: 100%;
+}
+
+
+.cs-perfect-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cs-vert-center{
+    display: flex;
+    align-items: center;
+}
+.cs-hor-center{
+    display: flex;
+    justify-content: center;
+}
+
+.cs-flex-wrap{
+    flex-wrap: wrap;
+}
