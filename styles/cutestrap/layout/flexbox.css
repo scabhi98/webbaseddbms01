@@ -1,13 +1,57 @@
 [class^="cs-flex-"], [class^="cs-layout-"] {
     box-sizing: border-box;
 }
+.cs-layout, .cs-layout-row, .cs-layout-column{
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
 .cs-layout-row{
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
     flex-direction: row;
 }
 .cs-layout-column{
-    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
     flex-direction: column;
+}
+.cs-start-start, .cs-start-center, .cs-start-end, .cs-start-space-between, .cs-start-space-around {
+  align-items: flex-start;
+  -webkit-box-align: start;
+}
+.cs-center-start, .cs-center-center, .cs-center-end, .cs-center-space-between, .cs-center-space-around {
+  align-items: center;
+  -webkit-box-align: center;
+}
+.cs-end-start, .cs-end-center, .cs-end-end, .cs-end-space-between, .cs-end-space-around {
+  align-items: flex-end;
+  -webkit-box-align: end;
+}
+.cs-stretch-start, .cs-stretch-center, .cs-stretch-end, .cs-stretch-space-between, .cs-stretch-space-around {
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+.cs-start-start, .cs-center-start, .cs-end-start, .cs-stretch-start{
+  -webkit-box-pack: justify;
+  justify-content: flex-start;
+}
+.cs-start-center, .cs-center-center, .cs-end-center, .cs-stretch-center{
+  -webkit-box-pack: justify;
+  justify-content: center;  
+}
+.cs-center-end, .cs-stretch-end, .cs-start-end, .cs-end-end{
+  -webkit-box-pack: justify;
+  justify-content: flex-end;
+}
+.cs-start-space-between, .cs-center-space-between, .cs-stretch-space-between, .cs-end-space-between{
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+.cs-start-space-around, .cs-center-space-around, .cs-stretch-space-around, .cs-end-space-around{
+  -webkit-box-pack: justify;
+  justify-content: space-around;
 }
 /* Flex Items*/
 .cs-spacer, .cs-flex-grow, .cs-flex-100{
@@ -126,148 +170,148 @@
         -ms-flex: 1 1 calc(200% / 3);
             flex: 1 1 calc(200% / 3);
 }
-.cs-layout-row [class^="cs-flex-"]{
+.cs-layout-row > [class^="cs-flex-"]{
     max-height: 100%;
 }
-.cs-layout-row .cs-flex-5 {
+.cs-layout-row > .cs-flex-5 {
   max-width: 5%;
 }
-.cs-layout-row .cs-flex-10 {
+.cs-layout-row > .cs-flex-10 {
   max-width: 10%;
 }
-.cs-layout-row .cs-flex-15 {
+.cs-layout-row > .cs-flex-15 {
   max-width: 15%;
 }
-.cs-layout-row .cs-flex-20 {
+.cs-layout-row > .cs-flex-20 {
   max-width: 20%;
 }
-.cs-layout-row .cs-flex-25 {
+.cs-layout-row > .cs-flex-25 {
   max-width: 25%;
 }
-.cs-layout-row .cs-flex-30 {
+.cs-layout-row > .cs-flex-30 {
   max-width: 30%;
 }
-.cs-layout-row .cs-flex-35 {
+.cs-layout-row > .cs-flex-35 {
   max-width: 35%;
 }
-.cs-layout-row .cs-flex-40 {
+.cs-layout-row > .cs-flex-40 {
   max-width: 40%;
 }
-.cs-layout-row .cs-flex-45 {
+.cs-layout-row > .cs-flex-45 {
   max-width: 45%;
 }
-.cs-layout-row .cs-flex-50 {
+.cs-layout-row > .cs-flex-50 {
   max-width: 50%;
 }
-.cs-layout-row .cs-flex-55 {
+.cs-layout-row > .cs-flex-55 {
   max-width: 55%;
 }
-.cs-layout-row .cs-flex-60 {
+.cs-layout-row > .cs-flex-60 {
   max-width: 60%;
 }
-.cs-layout-row .cs-flex-65 {
+.cs-layout-row > .cs-flex-65 {
   max-width: 65%;
 }
-.cs-layout-row .cs-flex-70 {
+.cs-layout-row > .cs-flex-70 {
   max-width: 70%;
 }
-.cs-layout-row .cs-flex-75 {
+.cs-layout-row > .cs-flex-75 {
   max-width: 75%;
 }
-.cs-layout-row .cs-flex-80 {
+.cs-layout-row > .cs-flex-80 {
   max-width: 80%;
 }
-.cs-layout-row .cs-flex-85 {
+.cs-layout-row > .cs-flex-85 {
   max-width: 85%;
 }
-.cs-layout-row .cs-flex-90 {
+.cs-layout-row > .cs-flex-90 {
   max-width: 90%;
 }
-.cs-layout-row .cs-flex-95 {
+.cs-layout-row > .cs-flex-95 {
   max-width: 95%;
 }
-.cs-layout-row .cs-flex-100 {
+.cs-layout-row > .cs-flex-100 {
   max-width: 100%;
 }
-.cs-layout-column [class^="cs-flex-"]{
+.cs-layout-column > [class^="cs-flex-"]{
     max-width: 100%;
 }
-.cs-layout-column .cs-flex-5 {
+.cs-layout-column > .cs-flex-5 {
   max-height: 5%;
 }
-.cs-layout-column .cs-flex-10 {
+.cs-layout-column > .cs-flex-10 {
   max-height: 10%;
 }
-.cs-layout-column .cs-flex-15 {
+.cs-layout-column > .cs-flex-15 {
   max-height: 15%;
 }
-.cs-layout-column .cs-flex-20 {
+.cs-layout-column > .cs-flex-20 {
   max-height: 20%;
 }
-.cs-layout-column .cs-flex-25 {
+.cs-layout-column > .cs-flex-25 {
   max-height: 25%;
 }
-.cs-layout-column .cs-flex-30 {
+.cs-layout-column > .cs-flex-30 {
   max-height: 30%;
 }
-.cs-layout-column .cs-flex-35 {
+.cs-layout-column > .cs-flex-35 {
   max-height: 35%;
 }
-.cs-layout-column .cs-flex-40 {
+.cs-layout-column > .cs-flex-40 {
   max-height: 40%;
 }
-.cs-layout-column .cs-flex-45 {
+.cs-layout-column > .cs-flex-45 {
   max-height: 45%;
 }
-.cs-layout-column .cs-flex-50 {
+.cs-layout-column > .cs-flex-50 {
   max-height: 50%;
 }
-.cs-layout-column .cs-flex-55 {
+.cs-layout-column > .cs-flex-55 {
   max-height: 55%;
 }
-.cs-layout-column .cs-flex-60 {
+.cs-layout-column > .cs-flex-60 {
   max-height: 60%;
 }
-.cs-layout-column .cs-flex-65 {
+.cs-layout-column > .cs-flex-65 {
   max-height: 65%;
 }
-.cs-layout-column .cs-flex-70 {
+.cs-layout-column > .cs-flex-70 {
   max-height: 70%;
 }
-.cs-layout-column .cs-flex-75 {
+.cs-layout-column > .cs-flex-75 {
   max-height: 75%;
 }
-.cs-layout-column .cs-flex-80 {
+.cs-layout-column > .cs-flex-80 {
   max-height: 80%;
 }
-.cs-layout-column .cs-flex-85 {
+.cs-layout-column > .cs-flex-85 {
   max-height: 85%;
 }
-.cs-layout-column .cs-flex-90 {
+.cs-layout-column > .cs-flex-90 {
   max-height: 90%;
 }
-.cs-layout-column .cs-flex-95 {
+.cs-layout-column > .cs-flex-95 {
   max-height: 95%;
 }
-.cs-layout-column .cs-flex-100 {
+.cs-layout-column > .cs-flex-100 {
   max-height: 100%;
 }
 
 
 .cs-perfect-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cs-vert-center{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .cs-hor-center{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .cs-flex-wrap{
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }

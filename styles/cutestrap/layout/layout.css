@@ -30,3 +30,15 @@
 .cs-margin-2-8{
     margin: 2% 8%;
 }
+.cs-no-margin{
+    margin: 0;
+}
+
+
+/* Width and height*/
+.cs-full-width{
+    width: 100%;
+}
+.cs-full-height{
+    height: 100%;
+}
