@@ -34,7 +34,6 @@ nav a {
 }
 nav a:hover {
     text-decoration: underline;
-    text-transform: capitalize;
     padding: 0.1em 1.6em;
     font-size: 1.2rem;
     background-color: rgba(251, 135, 68, 0.411);
