@@ -10,6 +10,7 @@
     <link href="styles/cutestrap/cutestrap.css" rel="stylesheet" />
     <link href="styles/custom.styles.css" rel="stylesheet" />
     <title>Welcome | Radhakrishnan Bhawan</title>
+    
 </head>
 <body>
     <section class="cs-header">
@@ -23,14 +24,17 @@
                     <span class="cs-spacer"></span>
                     <a href="about_us.html">About Us</a>
                     <a href="contact_us.html">Contact Us</a>
+                    <button id="themeSwitchBtn" class="cs-self-align-center cs-text-sm">
+                        Light Theme
+                    </button>
                 </nav>
             </div> 
             <div class="cs-banner cs-vert-center">
                 <div class="cs-banner-gradient ">
-                    <span class="cs-text-xxl cs-font-special animate__animated animate__fadeIn">
-                        “शिक्षक वह नहीं जो छात्र के दिमाग में तथ्यों को जबरन ठूंसे, बल्कि वास्तविक शिक्षक तो वह है जो उसे आने वाले कल की चुनौतियों के लिए तैयार करें.”
+                    <span class="cs-text-xxl cs-font-special animate__animated animate__fadeIn cs-text-right">
+                        “The true teachers are those who help us think for ourselves.”
                         <br>
-                        <address class="cs-text-xl cs-font-special cs-text-right">
+                        <address class="cs-text-l cs-font-special cs-text-right">
                             -Dr. Sarvepalli Radhakrishnan
                         </address>
                     </span>
@@ -39,7 +43,7 @@
         </div>   
     </section>
     <section class="cs-content cs-container" id="content-section">
-        <div class="cs-layout-row">
+        <!-- <div class="cs-layout-row">
             <div class="cs-card cs-elevation-z2 cs-flex-75">
                 <h3>
                     Anouncements
@@ -50,7 +54,7 @@
                     Notice Board
                 </h3>
             </div>
-        </div>
+        </div> -->
         <h1 class="cs-font-danc">
             Recent Creativity
         </h1>
@@ -87,29 +91,28 @@
                 </div>
                 <div class="cs-card cs-elevation-z2">
                     <h3 class="cs-text-center">
-                        Sheltered in Place
+                        The Letter A
                     </h3>
                     <p>
-                        You watch your boy struggle with giving <br>
-                        up the turtle, returning it to the pond <br>
-                        where he’d found it on a walk— <br>
-                        first time you’d all been out in days. <br>
-
-                        How thoughtful he thought he’d been, <br>
-                        making it a home in the home <br>
-                        where the family sheltered in place. <br>
-                        How he cared for his armored friend. <br>
-
-                        Having picked flowers, knowing they’d die, <br>
-                        you understand the urge to pluck <br>
-                        the exotic, the beautiful—any diversion <br>
-                        from fear, which is in itself a disease. <br>
-
-                        That morning, you helped your boy <br>
-                        give up the idea of living forever. <br>
+                        The letter A is awesome! <br>
+                        It simply is the best. <br>
+                        Without an A, you could not get <br>
+                        an A+ on a test. <br>
+                        You’d never see an acrobat <br>
+                        or eat an apple pie. <br>
+                        You couldn’t be an astronaut <br>
+                        or kiss your aunt goodbye. <br>
+                        An antelope would not exist. <br>
+                        An ape would be unknown. <br>
+                        You’d never hear a person <br>
+                        say “Afraid” or “All Alone”. <br>
+                        The A’s in avocado <br>
+                        would completely disappear <br>
+                        and certain words would be forgot <br>
+                        like “ankle”, “arm”, and “ear”. <br>
                     </p>
                     <address class="cs-text-right">
-                        by RICHARD LEVINE
+                        by DARREN SARDELLI
                     </address>
                 </div>
                 <style>
@@ -332,8 +335,29 @@
                 
             </div>
         </div>
+
        
     </section>
+    <script>
+        var lightTheme = document.createElement('link');
+        var themeSwitchBtn = document.getElementById('themeSwitchBtn');
+        var head  = document.getElementsByTagName('head')[0];
+        lightTheme.href = "styles/cutestrap/cutestrap.light.theme.css";
+        lightTheme.rel = 'stylesheet';
+        lightTheme.type = 'text/css';
+        lightTheme.media = 'all';
+        themeSwitchBtn.onclick = function(){
+            if(lightTheme.isConnected){
+                themeSwitchBtn.innerHTML = "Light Theme";
+                head.removeChild(lightTheme);
+                
+            }
+            else{
+                themeSwitchBtn.innerHTML = "Dark Theme";
+                head.appendChild(lightTheme);
+            }
+        }
+    </script>
 
 </body>
 </html>
