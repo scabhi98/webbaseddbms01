@@ -37,3 +37,10 @@ body *{
 address{
     margin: 1rem 1.2rem;
 }
+
+button{
+    background-color: rgb(24, 11, 0);
+    border: 1px solid rgb(12, 6, 0);
+    cursor: pointer;
+    padding: 0.2em 0.5em;
+}

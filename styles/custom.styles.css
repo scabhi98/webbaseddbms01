@@ -10,3 +10,7 @@ body{
     width: 100vw;
     overflow-x: hidden;
 }
+
+.cs-input-container{
+    min-width: 320px;
+}

@@ -12,6 +12,7 @@
 }
 .cs-header-overlay{
     background-color: rgba(53, 11, 1, 0.267);
+    overflow: auto;
 }
 
 /* Margins */
@@ -31,7 +32,7 @@
     margin: 2% 8%;
 }
 .cs-no-margin{
-    margin: 0;
+    margin: 0 !important;
 }
 
 
@@ -41,4 +42,21 @@
 }
 .cs-full-height{
     height: 100%;
+}
+
+/* Shape */
+.cs-full-circle{
+    border-radius: 100%;
+}
+.cs-small-square{
+    height: 3em;
+    width: 3em;
+}
+
+/* Positions */
+.cs-float-left{
+    float: left;
+}
+.cs-float-right{
+    float: right;
 }

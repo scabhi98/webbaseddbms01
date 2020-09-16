@@ -315,3 +315,6 @@
 .cs-flex-wrap{
   flex-wrap: wrap;
 }
+.cs-self-align-center{
+  align-self: center;
+}

@@ -1,7 +1,8 @@
 .cs-banner{
     height: 95%;
     flex-direction: row-reverse;
-    
+    max-width: 70vw;
+    float: right;
     height: 65vh;
 }
 
