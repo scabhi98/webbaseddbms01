@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="styles/animate.min.css"/>
+
+    <link href="styles/cutestrap/cutestrap.css" rel="stylesheet" />
+    <link href="styles/custom.styles.css" rel="stylesheet" />
+    <title>Welcome | Radhakrishnan Bhawan</title>
+</head>
+<body>
+    <section class="cs-header">
+        <div class="cs-header-overlay">
+            <div class="cs-nav-wrapper">
+                <nav>
+                    <a href="./index.html">home</a>
+                    <span class="cs-title cs-vert-center">
+                        Radhakrishnan Bhawan
+                    </span>
+                    <span class="cs-spacer"></span>
+                    <a href="about_us.html">About Us</a>
+                    <a href="contact_us.html">Contact Us</a>
+                </nav>
+            </div> 
+            <div class="cs-banner cs-vert-center">
+                <div class="cs-banner-gradient ">
+                    <span class="cs-text-xxl cs-font-special animate__animated animate__fadeIn">
+                        “The true teachers are those who help us think for ourselves.”
+                        <br>
+                        <address class="cs-text-xl cs-font-special cs-text-right">
+                            -Dr. Sarvepalli Radhakrishnan
+                        </address>
+                    </span>
+                </div>
+            </div>
+        </div>   
+    </section>
+   
+   <style>
+   body{
+      margin:0;
+   }
+   #up{
+    background-color: #FF5733;
+    hight:80px;
+    width:100%;
+    padding:2%;
+    margin-left:0;
+    margin-top:0;
+   }
+   #e1{
+       background-color: 0;
+       hight: 5em;
+       width: 50%;
+       margin: 10px;
+   }
+   #e2{
+   background-color: 0;
+   hight: 5em;
+   width: 50%;
+   margin: 10px;
+   }
+   #e3{
+   background-color: 0;
+   hight: 5em;
+   width: 50%;
+   margin: 10px;
+   }
+   #el{
+  border-radius: 1em;
+  background: yellow;
+  border: 2px solid black;
+  padding: 5px 15px;
+  min-width: 5em;
+  margin: 3px;
+  }
+  #Line{
+  border-top: solid brown;
+  padding: 1px;
+  width: 104%
+  }
+   #Line2{
+   border-bottom: solid brown;
+   padding:1px;
+   width: 104%
+   }
+   </style>
+   
+   <form>
+   <div id="e1">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Type Username here"><br>
+   </div>
+   
+   
+   <div id="e2">
+         <label for="email">E-mail address:</label>
+         <input type="email" id="email" name="email" placeholder="type your e-mail here">
+   </div>
+   
+    <input type="radio" id="student" name="designation" value="student">
+    <label for="student">Student</label><br>
+    <input type="radio" id="dsw" name="designation" value="dsw">
+    <label for="dsw">Dean of Student Welfare</label><br>
+    <input type="radio" id="provost" name="designation" value="provost">
+    <label for="provost">Provost</label><br>
+    <input type="radio" id="steward" name="designation" value="steward">
+    <label for="steward">Steward</label><br>
+    <input type="radio" id="other" name="designation" value="other">
+    <label for="other">Other</label>
+   
+   <div id="e3"> 
+         Description:
+         <textarea rows = "5" cols = "50" name = "description" placeholder="write your feedback details here">
+         </textarea>
+        
+    </div>
+    
+    
+         <button id="el" style="text-align:center;">
+               Reset
+         </button>
+    
+    
+    <button id="el" style="text-align:center;">cancel
+    </button>
+    
+    </form>
+   
+	
+</html>

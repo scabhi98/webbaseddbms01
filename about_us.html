@@ -3,51 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Demo</title>
+    <title>About Us | Radhakrishnan Bhawan</title>
+    <link href="styles/cutestrap/cutestrap.css" rel="stylesheet" />
 </head>
 <body>
     <style>
-        h1{
-           
-            font-family:'Times New Roman', Times, serif;
-            font-size: 2em;
-            font-weight:bold;
-            text-align: center;
-            text-decoration: underline;
-            color:darkred;
-            font-style: oblique;
-        }
-        body{
-            padding:0;
-            margin: 0px;
-        }
-        .header-container{
-            width: 100%;
-          
-            background-color: rgb(63, 31, 1);
-        }
-        .layout-row{
-            display: flex;
-            flex-direction: row;
-        }
-        .flex-33{
-            height: 100%;
-            flex: 25 0 auto;
-        }
-        .float-image{
-            height: 5em;
-            width: 5em;
-            margin-bottom: -2.5em;
-            border: 1px solid black;
-            border-radius: 2.5em;
-        }
-        .image-container{
-            height: 12em;
-            width: 100%;
-            background-image: url("./btimg.jpeg");
-            background-repeat:no-repeat;
-        }
-        
+               
       .div1 {
             
             width: 70%;
@@ -70,28 +31,32 @@
             
              }
     </style>
-    <div class="header-container layout-row">
-        <div class="flex-33">
-
-            <div class="layout-row" style="height: 100%;">
-                <div class="flex-33"></div>
-                <div class="flex-33">
-                    <img src=".\bthostelpic.jpeg" class="float-image" alt="">
+    <section class="cs-header">
+        <div class="cs-header-overlay">
+            <div class="cs-nav-wrapper">
+                <nav>
+                    <a href="./index.html">home</a>
+                    <span class="cs-title cs-vert-center">
+                        Radhakrishnan Bhawan
+                    </span>
+                    <span class="cs-spacer"></span>
+                    <a href="about_us.html">About Us</a>
+                    <a href="contact_us.html">Contact Us</a>
+                </nav>
+            </div> 
+            <div class="cs-banner cs-vert-center">
+                <div class="cs-banner-gradient ">
+                    <span class="cs-text-xxl cs-font-special animate__animated animate__fadeIn">
+                        "हमें तकनीकी ज्ञान के अलावा आत्मा की महानता को प्राप्त करना भी जरूरी है."
+                        <br>
+                        <address class="cs-text-xl cs-font-special cs-text-right">
+                            -डॉ. सर्वपल्ली राधाकृष्णन
+                        </address>
+                    </span>
                 </div>
-                <div class="flex-33"></div>
             </div>
-
-        </div>
-        <div class="flex-33">
-            pi
-        </div>
-        <div class="flex-33">
-            pi
-        </div>
-        <div class="flex-33">
-            xi
-        </div>
-    </div>
+        </div>   
+    </section>
     <div class="image-container">
         <div style="background: linear-gradient(to left, rgb(34, 7, 0), rgba(54, 11, 0, 0.856), rgba(112, 32, 0, 0.397), rgba(112, 32, 0, 0.253), rgba(112, 32, 0, 0.02)); height: 100%; width: 100%;">
             <p style="height: 100%; width: 90%; text-align: right; display: inline-block; color: white; font-size:1.5em; font-weight: 500;">
@@ -101,9 +66,10 @@
     </div>
 
         <br>
-        <h1>About Us</h1>
+        <section class="cs-content cs-container">
+            <h1>About Us</h1>
             <div class="div1">
-            <p style="align-content: center; ">
+            <p style="align-content: center; " class="cs-font-kalam">
                 It is the oldest hostel building of the university of kalyani, since before 
                 the establishment of the university in 1960. Previously, It was an 
                 institute for teachers basic training and the name was B.T.College 
@@ -120,7 +86,7 @@
             </p>
             </div>
             
-        <p id="rcorners1" style="color: white;">
+        <p class="cs-card cs-elevation-z3">
             <b>Address :<b><br>
                 <i>
                   Radhakrishnan Bhawan (B.T.-MEN'S HALL)<br>
@@ -129,7 +95,12 @@
                   Kalyani - 741235   
                   </i>
         </p>
+
+        <p style="height: 300px" class="cs-vert-center">
+            Kunal Sen
+        </p>
  
+        </section>
    
 </body>
 </html>
