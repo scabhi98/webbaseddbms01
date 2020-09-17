@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/cutestrap/cutestrap.css"/>
+</head>
+<body>
+    <div class="cs-container">
+        <div class="cs-form-wrapper">
+            <form action="localhost:3000/messages" method="post" class="cs-form">
+                <div class="cs-form-input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" />
+                </div>
+                <div class="cs-form-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email address" />
+                </div>
+                <div class="cs-form-input">
+                    <label for="subject">Subject</label>
+                    <input id="subject" type="text" placeholder="Subject of Message" />
+                </div>
+                <div class="cs-form-input">
+                    <span>Who are you? </span>
+                    <input type="radio" id="student" name="designation" value="student">
+                    <label for="student">Student</label>
+                    <input type="radio" id="dsw" name="designation" value="dsw">
+                    <label for="dsw">Dean of Student Welfare</label>
+                    <input type="radio" id="provost" name="designation" value="provost">
+                    <label for="provost">Provost</label>
+                    <input type="radio" id="steward" name="designation" value="steward">
+                    <label for="steward">Steward</label>
+                    <input type="radio" id="other" name="designation" value="other">
+                    <label for="other">Other</label>
+                </div>
+                <div class="cs-form-input">
+                    <label for="message">Message</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <div class="cs-form-actions">
+                    <button class="cs-form-action cs-default">
+                        Send
+                    </button>
+                    <button class="cs-form-action cs-reset">
+                        Clear
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

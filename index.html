@@ -43,7 +43,7 @@
         </div>   
     </section>
     <section class="cs-content cs-container" id="content-section">
-        <h1 class="cs-font-danc cs-text-right">
+        <h1 class="cs-font-danc">
             Recent Creativity
         </h1>
         <hr class="animate__animated animate__fadeInLeft">
@@ -323,29 +323,7 @@
                 
             </div>
         </div>
-
-       
     </section>
-    <script>
-        var lightTheme = document.createElement('link');
-        var themeSwitchBtn = document.getElementById('themeSwitchBtn');
-        var head  = document.getElementsByTagName('head')[0];
-        lightTheme.href = "styles/cutestrap/cutestrap.light.theme.css";
-        lightTheme.rel = 'stylesheet';
-        lightTheme.type = 'text/css';
-        lightTheme.media = 'all';
-        themeSwitchBtn.onclick = function(){
-            if(lightTheme.isConnected){
-                themeSwitchBtn.innerHTML = "Light Theme";
-                head.removeChild(lightTheme);
-                
-            }
-            else{
-                themeSwitchBtn.innerHTML = "Dark Theme";
-                head.appendChild(lightTheme);
-            }
-        }
-    </script>
-
+    <script src="scripts/theme.switch.js"></script>
 </body>
 </html>
