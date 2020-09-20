@@ -5,7 +5,6 @@ font-family: 'Amatic SC', cursive;
 font-family: 'Dancing Script', cursive;
 font-family: 'Fredericka the Great', cursive;
 font-family: 'Jost', sans-serif;
-font-family: 'Kalam', cursive;
 font-family: 'Special Elite', cursive;
 
 */
@@ -17,23 +16,23 @@ p, a, blockquote, span, small, em, div, strong, .cs-font-jost {
 h1, h2, h3, h4, h5, h6, nav a, .cs-font-alg {
     font-family: 'Alegreya Sans SC', sans-serif;
 }
-.cs-font-danc{
+.cs-font-danc, .cs-font-cursive{
     font-family: 'Dancing Script', cursive;
 }
-.cs-font-amat{
+.cs-font-amat, .cs-font-strange{
     font-family: 'Amatic SC', cursive;
 }
-.cs-font-fred{
+.cs-font-fredm, .cs-font-title{
     font-family: 'Fredericka the Great', cursive;
 }
-.cs-font-kalam{
-    font-family: 'Kalam', cursive;
-}
-.cs-font-special{
+.cs-font-qoute, .cs-font-special{
     font-family: 'Special Elite', cursive;
 }
 
 .cs-jumbo-text{
+    font-size: 5rem;
+}
+.cs-text-xxxl{
     font-size: 4rem;
 }
 .cs-text-xxl{
@@ -62,7 +61,7 @@ small, .cs-text-sm{
     font-size: 0.85rem;
 }
 .cs-text-xs{
-    font-size: 0.6rem;
+    font-size: 0.75rem;
 }
 
 .cs-text-right{
