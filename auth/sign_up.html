@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="/styles/animate.min.css"/>
+
+        <link href="/styles/cutestrap/cutestrap.css" rel="stylesheet" />
+        <link href="/styles/custom.styles.css" rel="stylesheet" />
+        <title>Welcome | Radhakrishnan Bhawan</title>
+    </head>
+    <body>
+        <section class="cs-header">
+            <div class="cs-header-overlay">
+                <div class="cs-nav-wrapper">
+                    <nav>
+                        <a href="/">home</a>
+                        <span class="cs-title cs-vert-center">
+                            Radhakrishnan Bhawan
+                        </span>
+                        <span class="cs-spacer"></span>
+                        <a href="/about_us.html">About Us</a>
+                        <a href="/contact_us.html">Contact Us</a>
+                        <a href="/auth/sign_up.html">Sign Up</a>
+                        <button id="themeSwitchBtn" class="cs-self-align-center cs-text-sm">
+                            Light Theme
+                        </button>
+                    </nav>
+                </div> 
+                <div class="cs-banner cs-vert-center">
+                    <div class="cs-banner-gradient ">
+                        <span class="cs-text-xxl cs-font-special animate__animated animate__fadeIn">
+                            "উঠুন, জাগ্রত হোন এবং লক্ষ্য পৌঁছানো পর্যন্ত থামবেন না ।"
+                            <br>
+                            <address class="cs-text-xl cs-font-special cs-text-right">
+                                স্বামী বিবেকানন্দ
+                            </address>
+                        </span>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <hr class="animate__animated animate__fadeInLeft">
+        <hr class="animate__animated animate__fadeInRight">
+        <br><br>
+        <section class="cs-content cs-container">
+            <div class="cs-layout-column cs-gt-s-layout-row cs-end-start">
+                <div class="cs-no-shrink cs-flex-40 cs-card cs-elevation-z3">
+                    <div class="cs-form-wrapper cs-flex-grow">
+                       <fieldset style="border-radius: 6px; border-style:solid">
+                          <legend class="cs-text-xl">Sign Up</legend>
+                               <form action="localhost:3000/users" method="post" class="cs-form">
+                                    <div class="cs-form-input">
+                                      <label for="appid">Application-Id:</label>
+                                      <input type="text" id="appid" placeholder="Application-Id as per admission receipt"/>
+                                    </div>
+                                    <div class="cs-form-input">
+                                       <label for="name">Name:</label>
+                                       <input type="text" id="firstname" placeholder="First Name" />
+                                       <input type="text" id="middlename" placeholder="Middle Name"/>
+                                       <input type="text" id="lastname" placeholder="Last Name"/>
+                                    </div>
+                               
+                                    <div class="cs-form-input">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" placeholder="Enter your Email address"/>
+                                    </div>
+                                    <div class="cs-form-input">
+                                         <label for="contact_no">Contact No.:</label>
+                                         <input type="text" id="contact_no" maxlength="10" placeholder="Enter 10-digits Mobile No."/>
+                                    </div>
+                                    <div class="cs-form-input">    
+                                        <label for="password">Password:</label>
+                                        <input type="password" id="password" placeholder="Enter your password" maxlength="8"/>
+                                    </div> 
+                                    <div class="cs-form-input">   
+                                        <label for="confirm password">Confirm Password:</label>
+                                        <input type="password" id="password" placeholder="Re-Enter your password" maxlength="8"/>
+                                    </div>
+                                    <div class="cs-form-actions">
+                                         <button class="cs-form-action" type="submit">
+                                          Next
+                                         </button>
+                                         <button class="cs-form-action cs-reset" type="reset">
+                                          Clear
+                                         </button>
+                                    </div>
+                                </form>
+                       </fieldset>
+                    </div>   
+                   </div>
+            </div>
+            
+        </section>     
+        <script src="/scripts/theme.switch.js"></script>
+    </body>
+</html>
