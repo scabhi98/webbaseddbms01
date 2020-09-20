@@ -18,39 +18,39 @@
     flex-direction: column;
 }
 /* Layout Content Alignment */
-.cs-start-start, .cs-start-center, .cs-start-end, .cs-start-space-between, .cs-start-space-around {
+.cs-start-start, .cs-center-start, .cs-end-start, .cs-space-between-start, .cs-space-around-start{
   align-items: flex-start;
   -webkit-box-align: start;
 }
-.cs-center-start, .cs-center-center, .cs-center-end, .cs-center-space-between, .cs-center-space-around {
+.cs-start-center, .cs-center-center, .cs-end-center, .cs-space-between-center, .cs-space-around-center {
   align-items: center;
   -webkit-box-align: center;
 }
-.cs-end-start, .cs-end-center, .cs-end-end, .cs-end-space-between, .cs-end-space-around {
+.cs-start-end, .cs-center-end, .cs-end-end, .cs-space-between-end, .cs-space-around-end {
   align-items: flex-end;
   -webkit-box-align: end;
 }
-.cs-stretch-start, .cs-stretch-center, .cs-stretch-end, .cs-stretch-space-between, .cs-stretch-space-around {
+.cs-start-stretch, .cs-center-stretch, .cs-end-stretch, .cs-space-between-stretch, .cs-space-around-stretch {
   align-items: stretch;
   -webkit-box-align: stretch;
 }
-.cs-start-start, .cs-center-start, .cs-end-start, .cs-stretch-start{
+.cs-start-start, .cs-start-center, .cs-start-end, .cs-start-stretch{
   -webkit-box-pack: justify;
   justify-content: flex-start;
 }
-.cs-start-center, .cs-center-center, .cs-end-center, .cs-stretch-center{
+.cs-center-start, .cs-center-center, .cs-center-end, .cs-center-stretch{
   -webkit-box-pack: justify;
   justify-content: center;  
 }
-.cs-center-end, .cs-stretch-end, .cs-start-end, .cs-end-end{
+.cs-end-center, .cs-end-stretch, .cs-end-start, .cs-end-end{
   -webkit-box-pack: justify;
   justify-content: flex-end;
 }
-.cs-start-space-between, .cs-center-space-between, .cs-stretch-space-between, .cs-end-space-between{
+.cs-space-between-start, .cs-space-between-center, .cs-space-between-stretch, .cs-space-between-end{
   -webkit-box-pack: justify;
   justify-content: space-between;
 }
-.cs-start-space-around, .cs-center-space-around, .cs-stretch-space-around, .cs-end-space-around{
+.cs-space-around-start, .cs-space-around-center, .cs-space-around-stretch, .cs-space-around-end{
   -webkit-box-pack: justify;
   justify-content: space-around;
 }
@@ -75,122 +75,132 @@
   display: initial;
 }
 /* Flex Items*/
-.cs-spacer, .cs-flex-grow, .cs-flex-100{
+.cs-spacer{
     flex: 1 1 auto;
 }
-.cs-flex-shrink, .cs-flex-0{
-    flex: 0 1 auto;
+.cs-flex-grow, .cs-flex-100{
+  flex: 1 0 auto;
 }
-.cs-flex{
+.cs-flex-shrink, .cs-flex-0{
+  flex: 0 1 auto;
+}
+.cs-no-shrink{
+  flex-shrink: 0;
+}
+.cs-no-grow{
+  flex-grow: 0;
+}
+[class$="-flex"]{
     -webkit-flex: 1 1 0%;
         -ms-flex: 1 1 0%;
             flex: 1 1 0%;
 }
-.cs-flex-5{
+[class$="-flex-5"]{
     -webkit-flex: 1 1 5%;
         -ms-flex: 1 1 5%;
             flex: 1 1 5%;
 }
-.cs-flex-10{
+[class$="-flex-10"]{
     -webkit-flex: 1 1 10%;
         -ms-flex: 1 1 10%;
             flex: 1 1 10%;   
 }
-.cs-flex-15{
+[class$="-flex-15"]{
     -webkit-flex: 1 1 15%;
         -ms-flex: 1 1 15%;
             flex: 1 1 15%;
 }
-.cs-flex-20{
+[class$="-flex-20"]{
     -webkit-flex: 1 1 20%;
         -ms-flex: 1 1 20%;
             flex: 1 1 20%;
 }
-.cs-flex-25{
+[class$="-flex-25"]{
     -webkit-flex: 1 1 25%;
         -ms-flex: 1 1 25%;
             flex: 1 1 25%;
 }
-.cs-flex-30{
+[class$="-flex-30"]{
     -webkit-flex: 1 1 30%;
         -ms-flex: 1 1 30%;
             flex: 1 1 30%;
 }
-.cs-flex-35{
+[class$="-flex-35"]{
     -webkit-flex: 1 1 35%;
         -ms-flex: 1 1 35%;
             flex: 1 1 35%;
 }
-.cs-flex-40{
+[class$="-flex-40"]{
     -webkit-flex: 1 1 40%;
         -ms-flex: 1 1 40%;
             flex: 1 1 40%;
 }
-.cs-flex-45{
+[class$="-flex-45"]{
     -webkit-flex: 1 1 45%;
         -ms-flex: 1 1 45%;
             flex: 1 1 45%;
 }
-.cs-flex-50{
+[class$="-flex-50"]{
     -webkit-flex: 1 1 50%;
         -ms-flex: 1 1 50%;
             flex: 1 1 50%;
 }
-.cs-flex-55{
+[class$="-flex-55"]{
     -webkit-flex: 1 1 55%;
         -ms-flex: 1 1 55%;
             flex: 1 1 55%;
 }
-.cs-flex-60{
+[class$="-flex-60"]{
     -webkit-flex: 1 1 60%;
         -ms-flex: 1 1 60%;
             flex: 1 1 60%;
 }
-.cs-flex-65{
+[class$="-flex-65"]{
     -webkit-flex: 1 1 65%;
         -ms-flex: 1 1 65%;
             flex: 1 1 65%;
 }
-.cs-flex-70{
+[class$="-flex-70"]{
     -webkit-flex: 1 1 70%;
         -ms-flex: 1 1 70%;
             flex: 1 1 70%;
 }
-.cs-flex-75{
+[class$="-flex-75"]{
     -webkit-flex: 1 1 75%;
         -ms-flex: 1 1 75%;
             flex: 1 1 75%;
 }
-.cs-flex-80{
+[class$="-flex-80"]{
     -webkit-flex: 1 1 80%;
         -ms-flex: 1 1 80%;
             flex: 1 1 80%;
 }
-.cs-flex-90{
+[class$="-flex-90"]{
     -webkit-flex: 1 1 90%;
         -ms-flex: 1 1 90%;
             flex: 1 1 90%;
 }
-.cs-flex-95{
+[class$="-flex-95"]{
     -webkit-flex: 1 1 95%;
         -ms-flex: 1 1 95%;
             flex: 1 1 95%;
 }
-.cs-flex-100{
+[class$="-flex-100"]{
     -webkit-flex: 1 1 100%;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
 }
-.cs-flex-33{
+[class$="-flex-33"]{
     -webkit-flex: 1 1 calc(100% / 3);
         -ms-flex: 1 1 calc(100% / 3);
             flex: 1 1 calc(100% / 3);
 }
-.cs-flex-66{
+[class$="-flex-66"]{
     -webkit-flex: 1 1 calc(200% / 3);
         -ms-flex: 1 1 calc(200% / 3);
             flex: 1 1 calc(200% / 3);
 }
+
 .cs-layout-row > [class^="cs-flex-"]{
     max-height: 100%;
 }
@@ -317,7 +327,128 @@
 .cs-layout-column > .cs-flex-100 {
   max-height: 100%;
 }
+/* No Shrink */
+.cs-layout-row > .cs-no-shrink.cs-flex-5 {
+  min-width: 5%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-10 {
+  min-width: 10%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-15 {
+  min-width: 15%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-20 {
+  min-width: 20%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-25 {
+  min-width: 25%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-30 {
+  min-width: 30%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-35 {
+  min-width: 35%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-40 {
+  min-width: 40%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-45 {
+  min-width: 45%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-50 {
+  min-width: 50%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-55 {
+  min-width: 55%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-60 {
+  min-width: 60%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-65 {
+  min-width: 65%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-70 {
+  min-width: 70%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-75 {
+  min-width: 75%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-80 {
+  min-width: 80%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-85 {
+  min-width: 85%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-90 {
+  min-width: 90%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-95 {
+  min-width: 95%;
+}
+.cs-layout-row > .cs-no-shrink.cs-flex-100 {
+  min-width: 100%;
+}
 
+.cs-layout-column > .cs-no-shrink.cs-flex-5 {
+  min-height: 5%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-10 {
+  min-height: 10%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-15 {
+  min-height: 15%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-20 {
+  min-height: 20%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-25 {
+  min-height: 25%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-30 {
+  min-height: 30%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-35 {
+  min-height: 35%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-40 {
+  min-height: 40%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-45 {
+  min-height: 45%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-50 {
+  min-height: 50%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-55 {
+  min-height: 55%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-60 {
+  min-height: 60%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-65 {
+  min-height: 65%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-70 {
+  min-height: 70%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-75 {
+  min-height: 75%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-80 {
+  min-height: 80%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-85 {
+  min-height: 85%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-90 {
+  min-height: 90%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-95 {
+  min-height: 95%;
+}
+.cs-layout-column > .cs-no-shrink.cs-flex-100 {
+  min-height: 100%;
+}
 
 .cs-perfect-center{
   display: flex;
@@ -370,39 +501,39 @@ xl	'(min-width: 1920px)'
       flex-direction: column;
   }
   /* Layout Content Alignment */
-  .cs-xs-start-start, .cs-xs-start-center, .cs-xs-start-end, .cs-xs-start-space-between, .cs-xs-start-space-around {
+  .cs-xs-start-start, .cs-xs-center-start, .cs-xs-end-start, .cs-xs-space-between-start, .cs-xs-space-around-start{
     align-items: flex-start;
     -webkit-box-align: start;
   }
-  .cs-xs-center-start, .cs-xs-center-center, .cs-xs-center-end, .cs-xs-center-space-between, .cs-xs-center-space-around {
+  .cs-xs-start-center, .cs-xs-center-center, .cs-xs-end-center, .cs-xs-space-between-center, .cs-xs-space-around-center {
     align-items: center;
     -webkit-box-align: center;
   }
-  .cs-xs-end-start, .cs-xs-end-center, .cs-xs-end-end, .cs-xs-end-space-between, .cs-xs-end-space-around {
+  .cs-xs-start-end, .cs-xs-center-end, .cs-xs-end-end, .cs-xs-space-between-end, .cs-xs-space-around-end {
     align-items: flex-end;
     -webkit-box-align: end;
   }
-  .cs-xs-stretch-start, .cs-xs-stretch-center, .cs-xs-stretch-end, .cs-xs-stretch-space-between, .cs-xs-stretch-space-around {
+  .cs-xs-start-stretch, .cs-xs-center-stretch, .cs-xs-end-stretch, .cs-xs-space-between-stretch, .cs-xs-space-around-stretch {
     align-items: stretch;
     -webkit-box-align: stretch;
   }
-  .cs-xs-start-start, .cs-xs-center-start, .cs-xs-end-start, .cs-xs-stretch-start{
+  .cs-xs-start-start, .cs-xs-start-center, .cs-xs-start-end, .cs-xs-start-stretch{
     -webkit-box-pack: justify;
     justify-content: flex-start;
   }
-  .cs-xs-start-center, .cs-xs-center-center, .cs-xs-end-center, .cs-xs-stretch-center{
+  .cs-xs-center-start, .cs-xs-center-center, .cs-xs-center-end, .cs-xs-center-stretch{
     -webkit-box-pack: justify;
     justify-content: center;  
   }
-  .cs-xs-center-end, .cs-xs-stretch-end, .cs-xs-start-end, .cs-xs-end-end{
+  .cs-xs-end-center, .cs-xs-end-stretch, .cs-xs-end-start, .cs-xs-end-end{
     -webkit-box-pack: justify;
     justify-content: flex-end;
   }
-  .cs-xs-start-space-between, .cs-xs-center-space-between, .cs-xs-stretch-space-between, .cs-xs-end-space-between{
+  .cs-xs-space-between-start, .cs-xs-space-between-center, .cs-xs-space-between-stretch, .cs-xs-space-between-end{
     -webkit-box-pack: justify;
     justify-content: space-between;
   }
-  .cs-xs-start-space-around, .cs-xs-center-space-around, .cs-xs-stretch-space-around, .cs-xs-end-space-around{
+  .cs-xs-space-around-start, .cs-xs-space-around-center, .cs-xs-space-around-stretch, .cs-xs-space-around-end{
     -webkit-box-pack: justify;
     justify-content: space-around;
   }
@@ -709,39 +840,39 @@ xl	'(min-width: 1920px)'
       flex-direction: column;
   }
   /* Layout Content Alignment */
-  .cs-gt-xs-start-start, .cs-gt-xs-start-center, .cs-gt-xs-start-end, .cs-gt-xs-start-space-between, .cs-gt-xs-start-space-around {
+  .cs-gt-xs-start-start, .cs-gt-xs-center-start, .cs-gt-xs-end-start, .cs-gt-xs-space-between-start, .cs-gt-xs-space-around-start{
     align-items: flex-start;
     -webkit-box-align: start;
   }
-  .cs-gt-xs-center-start, .cs-gt-xs-center-center, .cs-gt-xs-center-end, .cs-gt-xs-center-space-between, .cs-gt-xs-center-space-around {
+  .cs-gt-xs-start-center, .cs-gt-xs-center-center, .cs-gt-xs-end-center, .cs-gt-xs-space-between-center, .cs-gt-xs-space-around-center {
     align-items: center;
     -webkit-box-align: center;
   }
-  .cs-gt-xs-end-start, .cs-gt-xs-end-center, .cs-gt-xs-end-end, .cs-gt-xs-end-space-between, .cs-gt-xs-end-space-around {
+  .cs-gt-xs-start-end, .cs-gt-xs-center-end, .cs-gt-xs-end-end, .cs-gt-xs-space-between-end, .cs-gt-xs-space-around-end {
     align-items: flex-end;
     -webkit-box-align: end;
   }
-  .cs-gt-xs-stretch-start, .cs-gt-xs-stretch-center, .cs-gt-xs-stretch-end, .cs-gt-xs-stretch-space-between, .cs-gt-xs-stretch-space-around {
+  .cs-gt-xs-start-stretch, .cs-gt-xs-center-stretch, .cs-gt-xs-end-stretch, .cs-gt-xs-space-between-stretch, .cs-gt-xs-space-around-stretch {
     align-items: stretch;
     -webkit-box-align: stretch;
   }
-  .cs-gt-xs-start-start, .cs-gt-xs-center-start, .cs-gt-xs-end-start, .cs-gt-xs-stretch-start{
+  .cs-gt-xs-start-start, .cs-gt-xs-start-center, .cs-gt-xs-start-end, .cs-gt-xs-start-stretch{
     -webkit-box-pack: justify;
     justify-content: flex-start;
   }
-  .cs-gt-xs-start-center, .cs-gt-xs-center-center, .cs-gt-xs-end-center, .cs-gt-xs-stretch-center{
+  .cs-gt-xs-center-start, .cs-gt-xs-center-center, .cs-gt-xs-center-end, .cs-gt-xs-center-stretch{
     -webkit-box-pack: justify;
     justify-content: center;  
   }
-  .cs-gt-xs-center-end, .cs-gt-xs-stretch-end, .cs-gt-xs-start-end, .cs-gt-xs-end-end{
+  .cs-gt-xs-end-center, .cs-gt-xs-end-stretch, .cs-gt-xs-end-start, .cs-gt-xs-end-end{
     -webkit-box-pack: justify;
     justify-content: flex-end;
   }
-  .cs-gt-xs-start-space-between, .cs-gt-xs-center-space-between, .cs-gt-xs-stretch-space-between, .cs-gt-xs-end-space-between{
+  .cs-gt-xs-space-between-start, .cs-gt-xs-space-between-center, .cs-gt-xs-space-between-stretch, .cs-gt-xs-space-between-end{
     -webkit-box-pack: justify;
     justify-content: space-between;
   }
-  .cs-gt-xs-start-space-around, .cs-gt-xs-center-space-around, .cs-gt-xs-stretch-space-around, .cs-gt-xs-end-space-around{
+  .cs-gt-xs-space-around-start, .cs-gt-xs-space-around-center, .cs-gt-xs-space-around-stretch, .cs-gt-xs-space-around-end{
     -webkit-box-pack: justify;
     justify-content: space-around;
   }
@@ -1048,42 +1179,42 @@ xl	'(min-width: 1920px)'
       flex-direction: column;
   }
   /* Layout Content Alignment */
-  .cs-s-start-start, .cs-s-start-center, .cs-s-start-end, .cs-s-start-space-between, .cs-s-start-space-around {
-    align-items: flex-start;
-    -webkit-box-align: start;
-  }
-  .cs-s-center-start, .cs-s-center-center, .cs-s-center-end, .cs-s-center-space-between, .cs-s-center-space-around {
-    align-items: center;
-    -webkit-box-align: center;
-  }
-  .cs-s-end-start, .cs-s-end-center, .cs-s-end-end, .cs-s-end-space-between, .cs-s-end-space-around {
-    align-items: flex-end;
-    -webkit-box-align: end;
-  }
-  .cs-s-stretch-start, .cs-s-stretch-center, .cs-s-stretch-end, .cs-s-stretch-space-between, .cs-s-stretch-space-around {
-    align-items: stretch;
-    -webkit-box-align: stretch;
-  }
-  .cs-s-start-start, .cs-s-center-start, .cs-s-end-start, .cs-s-stretch-start{
-    -webkit-box-pack: justify;
-    justify-content: flex-start;
-  }
-  .cs-s-start-center, .cs-s-center-center, .cs-s-end-center, .cs-s-stretch-center{
-    -webkit-box-pack: justify;
-    justify-content: center;  
-  }
-  .cs-s-center-end, .cs-s-stretch-end, .cs-s-start-end, .cs-s-end-end{
-    -webkit-box-pack: justify;
-    justify-content: flex-end;
-  }
-  .cs-s-start-space-between, .cs-s-center-space-between, .cs-s-stretch-space-between, .cs-s-end-space-between{
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-  }
-  .cs-s-start-space-around, .cs-s-center-space-around, .cs-s-stretch-space-around, .cs-s-end-space-around{
-    -webkit-box-pack: justify;
-    justify-content: space-around;
-  }
+  .cs-s-start-start, .cs-s-center-start, .cs-s-end-start, .cs-s-space-between-start, .cs-s-space-around-start{
+  align-items: flex-start;
+  -webkit-box-align: start;
+}
+.cs-s-start-center, .cs-s-center-center, .cs-s-end-center, .cs-s-space-between-center, .cs-s-space-around-center {
+  align-items: center;
+  -webkit-box-align: center;
+}
+.cs-s-start-end, .cs-s-center-end, .cs-s-end-end, .cs-s-space-between-end, .cs-s-space-around-end {
+  align-items: flex-end;
+  -webkit-box-align: end;
+}
+.cs-s-start-stretch, .cs-s-center-stretch, .cs-s-end-stretch, .cs-s-space-between-stretch, .cs-s-space-around-stretch {
+  align-items: stretch;
+  -webkit-box-align: stretch;
+}
+.cs-s-start-start, .cs-s-start-center, .cs-s-start-end, .cs-s-start-stretch{
+  -webkit-box-pack: justify;
+  justify-content: flex-start;
+}
+.cs-s-center-start, .cs-s-center-center, .cs-s-center-end, .cs-s-center-stretch{
+  -webkit-box-pack: justify;
+  justify-content: center;  
+}
+.cs-s-end-center, .cs-s-end-stretch, .cs-s-end-start, .cs-s-end-end{
+  -webkit-box-pack: justify;
+  justify-content: flex-end;
+}
+.cs-s-space-between-start, .cs-s-space-between-center, .cs-s-space-between-stretch, .cs-s-space-between-end{
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+.cs-s-space-around-start, .cs-s-space-around-center, .cs-s-space-around-stretch, .cs-s-space-around-end{
+  -webkit-box-pack: justify;
+  justify-content: space-around;
+}
   /* Flex Alignment */
   .cs-s-self-align-center{
     align-self: center;
@@ -1387,39 +1518,39 @@ xl	'(min-width: 1920px)'
       flex-direction: column;
   }
   /* Layout Content Alignment */
-  .cs-gt-s-start-start, .cs-gt-s-start-center, .cs-gt-s-start-end, .cs-gt-s-start-space-between, .cs-gt-s-start-space-around {
+  .cs-gt-s-start-start, .cs-gt-s-center-start, .cs-gt-s-end-start, .cs-gt-s-space-between-start, .cs-gt-s-space-around-start{
     align-items: flex-start;
     -webkit-box-align: start;
   }
-  .cs-gt-s-center-start, .cs-gt-s-center-center, .cs-gt-s-center-end, .cs-gt-s-center-space-between, .cs-gt-s-center-space-around {
+  .cs-gt-s-start-center, .cs-gt-s-center-center, .cs-gt-s-end-center, .cs-gt-s-space-between-center, .cs-gt-s-space-around-center {
     align-items: center;
     -webkit-box-align: center;
   }
-  .cs-gt-s-end-start, .cs-gt-s-end-center, .cs-gt-s-end-end, .cs-gt-s-end-space-between, .cs-gt-s-end-space-around {
+  .cs-gt-s-start-end, .cs-gt-s-center-end, .cs-gt-s-end-end, .cs-gt-s-space-between-end, .cs-gt-s-space-around-end {
     align-items: flex-end;
     -webkit-box-align: end;
   }
-  .cs-gt-s-stretch-start, .cs-gt-s-stretch-center, .cs-gt-s-stretch-end, .cs-gt-s-stretch-space-between, .cs-gt-s-stretch-space-around {
+  .cs-gt-s-start-stretch, .cs-gt-s-center-stretch, .cs-gt-s-end-stretch, .cs-gt-s-space-between-stretch, .cs-gt-s-space-around-stretch {
     align-items: stretch;
     -webkit-box-align: stretch;
   }
-  .cs-gt-s-start-start, .cs-gt-s-center-start, .cs-gt-s-end-start, .cs-gt-s-stretch-start{
+  .cs-gt-s-start-start, .cs-gt-s-start-center, .cs-gt-s-start-end, .cs-gt-s-start-stretch{
     -webkit-box-pack: justify;
     justify-content: flex-start;
   }
-  .cs-gt-s-start-center, .cs-gt-s-center-center, .cs-gt-s-end-center, .cs-gt-s-stretch-center{
+  .cs-gt-s-center-start, .cs-gt-s-center-center, .cs-gt-s-center-end, .cs-gt-s-center-stretch{
     -webkit-box-pack: justify;
     justify-content: center;  
   }
-  .cs-gt-s-center-end, .cs-gt-s-stretch-end, .cs-gt-s-start-end, .cs-gt-s-end-end{
+  .cs-gt-s-end-center, .cs-gt-s-end-stretch, .cs-gt-s-end-start, .cs-gt-s-end-end{
     -webkit-box-pack: justify;
     justify-content: flex-end;
   }
-  .cs-gt-s-start-space-between, .cs-gt-s-center-space-between, .cs-gt-s-stretch-space-between, .cs-gt-s-end-space-between{
+  .cs-gt-s-space-between-start, .cs-gt-s-space-between-center, .cs-gt-s-space-between-stretch, .cs-gt-s-space-between-end{
     -webkit-box-pack: justify;
     justify-content: space-between;
   }
-  .cs-gt-s-start-space-around, .cs-gt-s-center-space-around, .cs-gt-s-stretch-space-around, .cs-gt-s-end-space-around{
+  .cs-gt-s-space-around-start, .cs-gt-s-space-around-center, .cs-gt-s-space-around-stretch, .cs-gt-s-space-around-end{
     -webkit-box-pack: justify;
     justify-content: space-around;
   }
@@ -1726,39 +1857,39 @@ xl	'(min-width: 1920px)'
       flex-direction: column;
   }
   /* Layout Content Alignment */
-  .cs-m-start-start, .cs-m-start-center, .cs-m-start-end, .cs-m-start-space-between, .cs-m-start-space-around {
+  .cs-m-start-start, .cs-m-center-start, .cs-m-end-start, .cs-m-space-between-start, .cs-m-space-around-start{
     align-items: flex-start;
     -webkit-box-align: start;
   }
-  .cs-m-center-start, .cs-m-center-center, .cs-m-center-end, .cs-m-center-space-between, .cs-m-center-space-around {
+  .cs-m-start-center, .cs-m-center-center, .cs-m-end-center, .cs-m-space-between-center, .cs-m-space-around-center {
     align-items: center;
     -webkit-box-align: center;
   }
-  .cs-m-end-start, .cs-m-end-center, .cs-m-end-end, .cs-m-end-space-between, .cs-m-end-space-around {
+  .cs-m-start-end, .cs-m-center-end, .cs-m-end-end, .cs-m-space-between-end, .cs-m-space-around-end {
     align-items: flex-end;
     -webkit-box-align: end;
   }
-  .cs-m-stretch-start, .cs-m-stretch-center, .cs-m-stretch-end, .cs-m-stretch-space-between, .cs-m-stretch-space-around {
+  .cs-m-start-stretch, .cs-m-center-stretch, .cs-m-end-stretch, .cs-m-space-between-stretch, .cs-m-space-around-stretch {
     align-items: stretch;
     -webkit-box-align: stretch;
   }
-  .cs-m-start-start, .cs-m-center-start, .cs-m-end-start, .cs-m-stretch-start{
+  .cs-m-start-start, .cs-m-start-center, .cs-m-start-end, .cs-m-start-stretch{
     -webkit-box-pack: justify;
     justify-content: flex-start;
   }
-  .cs-m-start-center, .cs-m-center-center, .cs-m-end-center, .cs-m-stretch-center{
+  .cs-m-center-start, .cs-m-center-center, .cs-m-center-end, .cs-m-center-stretch{
     -webkit-box-pack: justify;
     justify-content: center;  
   }
-  .cs-m-center-end, .cs-m-stretch-end, .cs-m-start-end, .cs-m-end-end{
+  .cs-m-end-center, .cs-m-end-stretch, .cs-m-end-start, .cs-m-end-end{
     -webkit-box-pack: justify;
     justify-content: flex-end;
   }
-  .cs-m-start-space-between, .cs-m-center-space-between, .cs-m-stretch-space-between, .cs-m-end-space-between{
+  .cs-m-space-between-start, .cs-m-space-between-center, .cs-m-space-between-stretch, .cs-m-space-between-end{
     -webkit-box-pack: justify;
     justify-content: space-between;
   }
-  .cs-m-start-space-around, .cs-m-center-space-around, .cs-m-stretch-space-around, .cs-m-end-space-around{
+  .cs-m-space-around-start, .cs-m-space-around-center, .cs-m-space-around-stretch, .cs-m-space-around-end{
     -webkit-box-pack: justify;
     justify-content: space-around;
   }
@@ -2065,39 +2196,39 @@ xl	'(min-width: 1920px)'
       flex-direction: column;
   }
   /* Layout Content Alignment */
-  .cs-gt-m-start-start, .cs-gt-m-start-center, .cs-gt-m-start-end, .cs-gt-m-start-space-between, .cs-gt-m-start-space-around {
+  .cs-gt-m-start-start, .cs-gt-m-center-start, .cs-gt-m-end-start, .cs-gt-m-space-between-start, .cs-gt-m-space-around-start{
     align-items: flex-start;
     -webkit-box-align: start;
   }
-  .cs-gt-m-center-start, .cs-gt-m-center-center, .cs-gt-m-center-end, .cs-gt-m-center-space-between, .cs-gt-m-center-space-around {
+  .cs-gt-m-start-center, .cs-gt-m-center-center, .cs-gt-m-end-center, .cs-gt-m-space-between-center, .cs-gt-m-space-around-center {
     align-items: center;
     -webkit-box-align: center;
   }
-  .cs-gt-m-end-start, .cs-gt-m-end-center, .cs-gt-m-end-end, .cs-gt-m-end-space-between, .cs-gt-m-end-space-around {
+  .cs-gt-m-start-end, .cs-gt-m-center-end, .cs-gt-m-end-end, .cs-gt-m-space-between-end, .cs-gt-m-space-around-end {
     align-items: flex-end;
     -webkit-box-align: end;
   }
-  .cs-gt-m-stretch-start, .cs-gt-m-stretch-center, .cs-gt-m-stretch-end, .cs-gt-m-stretch-space-between, .cs-gt-m-stretch-space-around {
+  .cs-gt-m-start-stretch, .cs-gt-m-center-stretch, .cs-gt-m-end-stretch, .cs-gt-m-space-between-stretch, .cs-gt-m-space-around-stretch {
     align-items: stretch;
     -webkit-box-align: stretch;
   }
-  .cs-gt-m-start-start, .cs-gt-m-center-start, .cs-gt-m-end-start, .cs-gt-m-stretch-start{
+  .cs-gt-m-start-start, .cs-gt-m-start-center, .cs-gt-m-start-end, .cs-gt-m-start-stretch{
     -webkit-box-pack: justify;
     justify-content: flex-start;
   }
-  .cs-gt-m-start-center, .cs-gt-m-center-center, .cs-gt-m-end-center, .cs-gt-m-stretch-center{
+  .cs-gt-m-center-start, .cs-gt-m-center-center, .cs-gt-m-center-end, .cs-gt-m-center-stretch{
     -webkit-box-pack: justify;
     justify-content: center;  
   }
-  .cs-gt-m-center-end, .cs-gt-m-stretch-end, .cs-gt-m-start-end, .cs-gt-m-end-end{
+  .cs-gt-m-end-center, .cs-gt-m-end-stretch, .cs-gt-m-end-start, .cs-gt-m-end-end{
     -webkit-box-pack: justify;
     justify-content: flex-end;
   }
-  .cs-gt-m-start-space-between, .cs-gt-m-center-space-between, .cs-gt-m-stretch-space-between, .cs-gt-m-end-space-between{
+  .cs-gt-m-space-between-start, .cs-gt-m-space-between-center, .cs-gt-m-space-between-stretch, .cs-gt-m-space-between-end{
     -webkit-box-pack: justify;
     justify-content: space-between;
   }
-  .cs-gt-m-start-space-around, .cs-gt-m-center-space-around, .cs-gt-m-stretch-space-around, .cs-gt-m-end-space-around{
+  .cs-gt-m-space-around-start, .cs-gt-m-space-around-center, .cs-gt-m-space-around-stretch, .cs-gt-m-space-around-end{
     -webkit-box-pack: justify;
     justify-content: space-around;
   }
@@ -2404,39 +2535,39 @@ xl	'(min-width: 1920px)'
       flex-direction: column;
   }
   /* Layout Content Alignment */
-  .cs-l-start-start, .cs-l-start-center, .cs-l-start-end, .cs-l-start-space-between, .cs-l-start-space-around {
+  .cs-l-start-start, .cs-l-center-start, .cs-l-end-start, .cs-l-space-between-start, .cs-l-space-around-start{
     align-items: flex-start;
     -webkit-box-align: start;
   }
-  .cs-l-center-start, .cs-l-center-center, .cs-l-center-end, .cs-l-center-space-between, .cs-l-center-space-around {
+  .cs-l-start-center, .cs-l-center-center, .cs-l-end-center, .cs-l-space-between-center, .cs-l-space-around-center {
     align-items: center;
     -webkit-box-align: center;
   }
-  .cs-l-end-start, .cs-l-end-center, .cs-l-end-end, .cs-l-end-space-between, .cs-l-end-space-around {
+  .cs-l-start-end, .cs-l-center-end, .cs-l-end-end, .cs-l-space-between-end, .cs-l-space-around-end {
     align-items: flex-end;
     -webkit-box-align: end;
   }
-  .cs-l-stretch-start, .cs-l-stretch-center, .cs-l-stretch-end, .cs-l-stretch-space-between, .cs-l-stretch-space-around {
+  .cs-l-start-stretch, .cs-l-center-stretch, .cs-l-end-stretch, .cs-l-space-between-stretch, .cs-l-space-around-stretch {
     align-items: stretch;
     -webkit-box-align: stretch;
   }
-  .cs-l-start-start, .cs-l-center-start, .cs-l-end-start, .cs-l-stretch-start{
+  .cs-l-start-start, .cs-l-start-center, .cs-l-start-end, .cs-l-start-stretch{
     -webkit-box-pack: justify;
     justify-content: flex-start;
   }
-  .cs-l-start-center, .cs-l-center-center, .cs-l-end-center, .cs-l-stretch-center{
+  .cs-l-center-start, .cs-l-center-center, .cs-l-center-end, .cs-l-center-stretch{
     -webkit-box-pack: justify;
     justify-content: center;  
   }
-  .cs-l-center-end, .cs-l-stretch-end, .cs-l-start-end, .cs-l-end-end{
+  .cs-l-end-center, .cs-l-end-stretch, .cs-l-end-start, .cs-l-end-end{
     -webkit-box-pack: justify;
     justify-content: flex-end;
   }
-  .cs-l-start-space-between, .cs-l-center-space-between, .cs-l-stretch-space-between, .cs-l-end-space-between{
+  .cs-l-space-between-start, .cs-l-space-between-center, .cs-l-space-between-stretch, .cs-l-space-between-end{
     -webkit-box-pack: justify;
     justify-content: space-between;
   }
-  .cs-l-start-space-around, .cs-l-center-space-around, .cs-l-stretch-space-around, .cs-l-end-space-around{
+  .cs-l-space-around-start, .cs-l-space-around-center, .cs-l-space-around-stretch, .cs-l-space-around-end{
     -webkit-box-pack: justify;
     justify-content: space-around;
   }
@@ -2743,39 +2874,39 @@ xl	'(min-width: 1920px)'
       flex-direction: column;
   }
   /* Layout Content Alignment */
-  .cs-xl-start-start, .cs-xl-start-center, .cs-xl-start-end, .cs-xl-start-space-between, .cs-xl-start-space-around {
+  .cs-xl-start-start, .cs-xl-center-start, .cs-xl-end-start, .cs-xl-space-between-start, .cs-xl-space-around-start{
     align-items: flex-start;
     -webkit-box-align: start;
   }
-  .cs-xl-center-start, .cs-xl-center-center, .cs-xl-center-end, .cs-xl-center-space-between, .cs-xl-center-space-around {
+  .cs-xl-start-center, .cs-xl-center-center, .cs-xl-end-center, .cs-xl-space-between-center, .cs-xl-space-around-center {
     align-items: center;
     -webkit-box-align: center;
   }
-  .cs-xl-end-start, .cs-xl-end-center, .cs-xl-end-end, .cs-xl-end-space-between, .cs-xl-end-space-around {
+  .cs-xl-start-end, .cs-xl-center-end, .cs-xl-end-end, .cs-xl-space-between-end, .cs-xl-space-around-end {
     align-items: flex-end;
     -webkit-box-align: end;
   }
-  .cs-xl-stretch-start, .cs-xl-stretch-center, .cs-xl-stretch-end, .cs-xl-stretch-space-between, .cs-xl-stretch-space-around {
+  .cs-xl-start-stretch, .cs-xl-center-stretch, .cs-xl-end-stretch, .cs-xl-space-between-stretch, .cs-xl-space-around-stretch {
     align-items: stretch;
     -webkit-box-align: stretch;
   }
-  .cs-xl-start-start, .cs-xl-center-start, .cs-xl-end-start, .cs-xl-stretch-start{
+  .cs-xl-start-start, .cs-xl-start-center, .cs-xl-start-end, .cs-xl-start-stretch{
     -webkit-box-pack: justify;
     justify-content: flex-start;
   }
-  .cs-xl-start-center, .cs-xl-center-center, .cs-xl-end-center, .cs-xl-stretch-center{
+  .cs-xl-center-start, .cs-xl-center-center, .cs-xl-center-end, .cs-xl-center-stretch{
     -webkit-box-pack: justify;
     justify-content: center;  
   }
-  .cs-xl-center-end, .cs-xl-stretch-end, .cs-xl-start-end, .cs-xl-end-end{
+  .cs-xl-end-center, .cs-xl-end-stretch, .cs-xl-end-start, .cs-xl-end-end{
     -webkit-box-pack: justify;
     justify-content: flex-end;
   }
-  .cs-xl-start-space-between, .cs-xl-center-space-between, .cs-xl-stretch-space-between, .cs-xl-end-space-between{
+  .cs-xl-space-between-start, .cs-xl-space-between-center, .cs-xl-space-between-stretch, .cs-xl-space-between-end{
     -webkit-box-pack: justify;
     justify-content: space-between;
   }
-  .cs-xl-start-space-around, .cs-xl-center-space-around, .cs-xl-stretch-space-around, .cs-xl-end-space-around{
+  .cs-xl-space-around-start, .cs-xl-space-around-center, .cs-xl-space-around-stretch, .cs-xl-space-around-end{
     -webkit-box-pack: justify;
     justify-content: space-around;
   }
