@@ -131,12 +131,12 @@ Flex layout allows you to define the alignment of child elements as follows:
     - **center**: places elements in center position with cross-direction.
     - **stretch**: stretches elements along the cross-direction.
 
-**in-direction** is the direction of layout.
-- For Row Layout its horizontal direction.
-- For Column Layout its vertical direction
-**cross-direction** is perpendicular direction of the layout.
-- For Row Layout its vertical direction.
-- For Column Layout its horizontal direction.
+- **in-direction** is the direction of layout.
+    - For Row Layout its horizontal direction.
+    - For Column Layout its vertical direction
+- **cross-direction** is perpendicular direction of the layout.
+    - For Row Layout its vertical direction.
+    - For Column Layout its horizontal direction.
 
 To apply layout alignment its need to attach the alignment class mentioning both direction alignment one after another. ,<br>Pattern is ```.cs-in-derection-cross-direction```
 
