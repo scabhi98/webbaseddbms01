@@ -49,3 +49,14 @@
   .cs-form-action.cs-default, .cs-form-actions [type=submit] {
     background-color:  rgba(135, 54, 0, 0.5)
   }  
+
+  .cs-input-hint{
+                 font-size:0.7rem;
+                 line-height: 0.8rem;
+                 color:rgb(255, 145, 0);
+               }
+
+ .cs-form-input input:invalid, .cs-form-input textarea:invalid {
+                box-shadow: 0px 0px 4px 1px red, 0px 0px 10px 3px rgba(243, 81, 135, 0.4);
+                transition: 300ms linear all;
+              }
