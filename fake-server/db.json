@@ -1,7 +1,44 @@
 {
-    "messages": [],
-    "posts": [],
-    "contacts": [],
-    "addresses": [],
-    "users": []
+  "messages": [],
+  "posts": [],
+  "contacts": [],
+  "addresses": [],
+  "users": [
+    {
+      "name": "Kunal Sen",
+      "email": "kunal.sir21@gmail.com",
+      "contact": "8001767933",
+      "password": "gsdgsdgsdkn",
+      "cnf_password": "sfsdgkjsdngks",
+      "id": 1
+    },
+    {
+      "name": "Abhijit Prasad",
+      "email": "abhijitprasad14@gmail.com",
+      "contact": "8240639840",
+      "password": "abhijitprasad",
+      "cnf_password": "abhijitprasad",
+      "id": 2
+    },
+    {
+      "name": "afafasfasf",
+      "email": "afsafka@mainfg",
+      "contact": "3363463334",
+      "password": "safaslfkjasl",
+      "cnf_password": "aslkfjaslkfja",
+      "id": 3
+    },
+    {
+      "name": "afafasfasf",
+      "email": "afsafka@mainfg",
+      "contact": "3363463334",
+      "password": "safaslfkjasl",
+      "cnf_password": "aslkfjaslkfja",
+      "id": 4
+    },
+    {
+      "filename": "",
+      "id": 5
+    }
+  ]
 }
