@@ -11,6 +11,10 @@ body{
     overflow-x: hidden;
 }
 
+a{
+  cursor: pointer;
+}
+
 .cs-input-container{
     min-width: 320px;
 }

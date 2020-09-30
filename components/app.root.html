@@ -1,0 +1,37 @@
+<section class="cs-header">
+    <div class="cs-header-overlay">
+        <div class="cs-elevation-z1 cs-nav-wrapper cs-no-margin">
+            <nav>
+                <a href="/">
+                    <i class="material-icons cs-text-m">
+                        home
+                    </i>
+                    Home
+                </a>
+                <span class="cs-title cs-vert-center">
+                    Radhakrishnan Bhawan
+                </span>
+                <span class="cs-spacer"></span>
+                <a class="cs-xs-hide" onclick="route('/about_us')">About Us</a>
+                <a onclick="route('/contact_us')">Contact Us</a>
+                <a onclick="route('/auth/login')">Log in</a>
+                <a onclick="route('/auth/profile')">Profile</a>
+                <button onclick="themeSwitch()" id="themeSwitchBtn" class="cs-self-align-center cs-text-sm">
+                    Light Theme
+                </button>
+            </nav>
+        </div> 
+        <div class="cs-banner cs-vert-center">
+            <div class="cs-banner-gradient ">
+                <span class="cs-text-xxl cs-font-special animate__animated animate__fadeIn cs-text-right">
+                    “|| वसुधैव कुटुम्बकम ||” <br><br>(The world is one family)
+                    <br>
+                    <address class="cs-text-l cs-font-special cs-text-right">
+                        --Maha Upanishad 6.71–75
+                    </address>
+                </span>
+            </div>
+        </div>
+    </div>   
+</section>
+<router-outlet></router-outlet>

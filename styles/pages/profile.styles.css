@@ -19,16 +19,7 @@ img.profile {
 
   .cs-list-item-bordered{
     border-bottom: 1px solid grey;
-  }
-
-  hr{
-    width: 90%;
-    margin-block-start: 0%;
-    margin-block-end: 0%;
-    margin-inline-end: 5%;
-    margin-inline-start: 5%;
-  }
-  
+  } 
 
   .avatar {
     vertical-align: middle;

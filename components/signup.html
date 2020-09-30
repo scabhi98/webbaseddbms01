@@ -1,0 +1,63 @@
+<section class="cs-content cs-container" >
+    <div class="cs-layout-column cs-gt-s-layout-row cs-end-start">
+        <div class="cs-no-shrink cs-flex-40 cs-card cs-elevation-z3">
+            <div class="cs-form-wrapper cs-flex-grow cs-full-width">
+               <fieldset style="border-radius: 6px; border-style:solid">
+                  <legend class="cs-text-xl">Sign Up</legend>
+                  <form style="background: linear-gradient(90deg, #d4be7b14 0%, #c67700ad 100%);padding:8px; border-radius: 6px"  id="sign_upForm" action="http://localhost:3000/users" enctype="application/json" method="post" class="cs-form">
+                            <div class="cs-form-input">
+                              <label class="required" for="appid">Application-Id:</label>
+                              <input type="text" id="appid" name="appid" pattern="[A-Z\d\/]{19}" placeholder="Application-Id as per admission receipt" title="Enter a valid Application-Id as per hostel admission receipt copy; like in this format: 'APP/KU/00/00/MBA001' " required="required"/>
+                            </div>
+                            <div class="cs-form-input">
+                               <label class="required" for="name">Name:</label>
+                               <input type="text" id="name" name="name" placeholder="Enter Your Name" required/>
+                            </div>
+                       
+                            <div class="cs-form-input">
+                                <label class="required" for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid E-mail address; for example:-tingtong@abc.com" required/>
+                            </div>
+                            <div class="cs-form-input">
+                                 <label class="required" for="contact_no">Contact No.:</label>
+                                 <input type="tel" id="contact_no" name="contact_no"  placeholder="Enter 10-digits Mobile No." pattern="[0-9]{10}" title="Enter a valid 10-digits Mobile number within 0-9, for example: 123456890" required="required"/>
+                            </div>
+                            <div class="cs-form-input">    
+                                <label class="required" for="password">Password:</label>
+                                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter your password" minlength="8" maxlength="32"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
+                            </div> 
+                            <div class="cs-form-input">   
+                                <label class="required" for="confirm password">Confirm Password:</label>
+                                <input type="password" id="cnf_password" name="cnf_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Re-Enter your password" minlength="8" maxlength="32" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
+                                <div id="message" class="cs-text-center cs-elevation-z1"></div>
+                                
+                                <div id="message1" class="cs-elevation-z1">
+
+                                    <span>Password must contain the following:</span> <br>
+                                    <span id="letter" class="invalid">A small (Lowercase) Letter</span><br>
+                                    <span id="capital" class="invalid">A CAPITAL (UPPERCASE) LETTER</span><br>
+                                    <span id="number" class="invalid">A number</span><br>
+                                    <span id="length" class="invalid">Minimum 8 characters</span>
+                                  </div>
+
+
+                            </div>
+                            <div class="cs-form-input">
+                                <label class="required" for="Upload Admission Receipt">Upload Hostel Admission Receipt:</label>
+                                <input type="file" id="adm_reciept" name="adm_reciept" accept="image/jpeg" title="'.jpeg /.jpg' file format allowed only" required/>
+                            </div>
+                            <div class="cs-form-actions">
+                                 <button class="cs-form-action" type="submit">
+                                  Next
+                                 </button>
+                                 <button class="cs-form-action cs-reset" type="reset">
+                                  Clear
+                                 </button>
+                            </div>
+                        </form>
+               </fieldset>
+            </div>   
+           </div>
+    </div>
+    
+</section>  
