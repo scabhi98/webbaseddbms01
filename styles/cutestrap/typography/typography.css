@@ -86,3 +86,7 @@ p, a, blockquote, span, small, em, div{
 .cs-font-lighter{
     font-weight: 200;
 }
+
+h3, h4 {
+    margin: 1rem 0.5rem;
+}

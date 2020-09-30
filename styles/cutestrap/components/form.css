@@ -77,4 +77,13 @@
                   transition: 300ms linear all;
                 }
 
- 
+              
+   .required:after {
+                     content:" *";
+                     color: red;
+                     display: inline;
+                     font-weight: bold;
+                   }
+  
+
+              

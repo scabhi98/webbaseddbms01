@@ -54,6 +54,9 @@
   -webkit-box-pack: justify;
   justify-content: space-around;
 }
+.cs-justify-end{
+  justify-self: flex-end;
+}
 /* Flex Alignment */
 .cs-self-align-center{
   align-self: center;

@@ -22,6 +22,9 @@
 .cs-margin-10p-all{
     margin: 10px;
 }
+.cs-margin-5-0{
+    margin: 5% 0%;
+}
 .cs-margin-5-all{
     margin: 5%;
 }
@@ -35,6 +38,10 @@
     margin: 0 !important;
 }
 
+/* Padding */
+.cs-padding-0-2{
+    padding: 0% 2%;
+}
 
 /* Width and height*/
 .cs-full-width{
