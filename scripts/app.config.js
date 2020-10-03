@@ -69,3 +69,4 @@ trikon.component('app-root', function(component){
 });
 
 trikon.startApp();
+route('/');
