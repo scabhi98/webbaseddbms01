@@ -3,7 +3,8 @@ const trikon = {
     components: {},
     update_components: {},
     routes: {},
-    rootComponent: null
+    rootComponent: null,
+    domParser: new DOMParser()
 };
 
 trikon.controller = function (name, callback) {
@@ -260,9 +261,15 @@ var route = window.route = function(url,target){
     }
     else{
         trikon.ajax({url: comp.templateUrl}).then(data => {
-            trikon.rootComponent.outlet.innerHTML = comp.template = data;
+            comp.template = data;
+            var view = trikon.domParser.parseFromString(data, 'text/html').body;
+            if(comp.onViewCreated)
+                comp.onViewCreated(view);
+            trikon.rootComponent.outlet.innerHTML = '';
+            trikon.rootComponent.outlet.appendChild(view);
+            
         });
     }
     
-    window.history.pushState(null, "About Us", url);
+    window.history.pushState(null, {title: url}, url);
 };
