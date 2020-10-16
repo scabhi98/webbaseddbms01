@@ -271,11 +271,6 @@ var route = window.route = function(url,target){
     }
     else{
         trikon.ajax({url: comp.templateUrl}).then(data => {
-<<<<<<< HEAD
-            trikon.rootComponent.outlet.innerHTML = comp.template = data;
-            if(comp.afterViewParsed)
-                comp.afterViewParsed(trikon.rootComponent.outlet);
-=======
             comp.template = data;
             var view = trikon.domParser.parseFromString(data, 'text/html').body;
             if(comp.onViewCreated)
@@ -283,7 +278,6 @@ var route = window.route = function(url,target){
             trikon.rootComponent.outlet.innerHTML = '';
             trikon.rootComponent.outlet.appendChild(view);
             
->>>>>>> 21b3e85f4be851925e7efb35ef80bd297b79c07d
         });
     }
     
