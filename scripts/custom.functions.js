@@ -28,21 +28,6 @@ function submit_action(){
 $(document).ready(function (){
     $('#name').val("");
 });
-
-
-$('#password, #cnf_password').on('keyup change', function () {
-    if ($('#password').val() == $('#cnf_password').val()) { 
-      if($('#password').val().length > 0)       
-      $('#message').html('Password Confirmed').css('color', 'yellow');
-      else
-      $('#message').html('');
-    } else {
-      
-        $('#message').html('Passwords are different').css('color', 'red');
-      
-    }
-      
-  }); 
   
 /*
 
@@ -64,6 +49,7 @@ document.write( generateOTP() );
 */
 
 
+<<<<<<< HEAD
 var myInput = document.getElementById("password");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
@@ -124,6 +110,8 @@ myInput.onkeyup = function() {
 
 
 
+=======
+>>>>>>> 21b3e85f4be851925e7efb35ef80bd297b79c07d
 //clic dropdown script
 
 /* When the user clicks on the button, 
