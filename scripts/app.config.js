@@ -6,16 +6,15 @@ trikon.component('app-root', function(component){
     component.controller = function (scope){
         console.log('app-root controller executerd');
     };
-    component.afterViewParsed = function(view){
-        let dropdownBtn = document.querySelector('.cs-circular-btn');
-        let menuContent = document.querySelector('.cs-dropdown-content');
+    component.onViewCreated = function(view){
+        let dropdownBtn = view.querySelector('.cs-circular-btn');
+        let menuContent = view.querySelector('.cs-dropdown-content');
         dropdownBtn.addEventListener('click',()=>{
             menuContent.classList.toggle('cs-hide');
             console.log('button is clicked');
         });
-        console.log('after view parsed: ');
-        console.log(dropdownBtn);
     }
+
 }).component('app-contact-us', function(component){
     component.templateUrl = APP_CONFIG.component.templates.contact_us;
     component.$scope = {
@@ -71,7 +70,7 @@ trikon.component('app-root', function(component){
         myInput.onblur = function() {
         view.querySelector("#message1").style.display = "none";
         }
-        myInput.onkeyup = function() {
+        myInput.addEventListener('keyup', function() {
             // Validate lowercase letters
             var lowerCaseLetters = /[a-z]/g;
             if(myInput.value.match(lowerCaseLetters)) {  
@@ -110,8 +109,10 @@ trikon.component('app-root', function(component){
                 length.classList.remove("valid");
                 length.classList.add("invalid");
             }
-        }
-        $('#password, #cnf_password').on('keyup change', function () {
+            conf_handler();
+        });
+        const conf_handler =  function () {
+            console.log('Password changed');
             if ($('#password').val() == $('#cnf_password').val()) { 
               if($('#password').val().length > 0)       
               $('#message').html('Password Confirmed').css('color', 'yellow');
@@ -121,8 +122,9 @@ trikon.component('app-root', function(component){
                 $('#message').html('Passwords are different').css('color', 'red');
             }
               
-        }); 
-
+        };
+        view.querySelector('#cnf_password').addEventListener('keyup', conf_handler);
+        
     };
 }).component('app-login', function(component){
     component.templateUrl = APP_CONFIG.component.templates.login;

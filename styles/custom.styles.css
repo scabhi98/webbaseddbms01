@@ -76,3 +76,7 @@ a{
   background-color: #dddddd80;
   transition:300ms all;
 }
+
+.cs-link:hover{
+  color:rgba(0, 102, 255, 0.993);
+}

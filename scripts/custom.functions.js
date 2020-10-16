@@ -73,8 +73,3 @@ window.onclick = function(event) {
 }
 */
 
-let dropdownBtn = document.querySelector('.cs-circular-btn');
-let menuContent = document.querySelector('.cs-dropdown-content');
-dropdownBtn.addEventListener('click',()=>{
-   menuContent.classList.toggle('cs-hide');
-});
