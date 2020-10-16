@@ -19,7 +19,18 @@ a{
     min-width: 320px;
 }
 
-// click dropdown styles
+/*
+.cs-usericon{
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.cs-usericon:hover, .cs-usericon:focus{
+ color: cyan;
+  box-shadow: 0 0 10px 4.6px rgb(248, 223, 83);
+} 
+*/
+ /* click dropdown styles 
 
 .dropbtn {
   background-color: #4CAF50;
@@ -32,32 +43,36 @@ a{
 
 .dropbtn:hover, .dropbtn:focus {
   background-color: #3e8e41;
-}
+} */
 
-.dropdown {
+.cs-dropdown {
   float: right;
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content {
-  display: none;
+.cs-dropdown-content {
+ /* display: none;*/
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  /*background-color: #f1f1f1;*/
+  background-color: rgba(172, 111, 76, 0.966);
+ /* background-color: #dddddd80; */
+  min-width: 200px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(185, 152, 152, 0.2);
   right: 0;
   z-index: 1;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.cs-circular-btn{
+  width:60px;
+  height:60px;
+  background-color: #dddddd20;
+  color: white;
+  font-size:15px;
 }
 
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
+.cs-circular-btn:hover{
+  background-color: #dddddd80;
+  transition:300ms all;
+}

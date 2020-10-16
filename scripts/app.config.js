@@ -4,8 +4,18 @@ trikon.component('app-root', function(component){
 
     };
     component.controller = function (scope){
-        
+        console.log('app-root controller executerd');
     };
+    component.afterViewParsed = function(view){
+        let dropdownBtn = document.querySelector('.cs-circular-btn');
+        let menuContent = document.querySelector('.cs-dropdown-content');
+        dropdownBtn.addEventListener('click',()=>{
+            menuContent.classList.toggle('cs-hide');
+            console.log('button is clicked');
+        });
+        console.log('after view parsed: ');
+        console.log(dropdownBtn);
+    }
 }).component('app-contact-us', function(component){
     component.templateUrl = APP_CONFIG.component.templates.contact_us;
     component.$scope = {

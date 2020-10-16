@@ -62,28 +62,31 @@
   }  
 
   .cs-input-hint{
-                 font-size:0.7rem;
-                 line-height: 0.8rem;
-                 color:rgb(255, 145, 0);
-               }
+   font-size:0.7rem;
+   line-height: 0.8rem;
+   color:rgb(255, 145, 0);
+   }
 
  .cs-form-input input:invalid, .cs-form-input textarea:invalid {
-                box-shadow: 0px 0px 4px 1px red, 0px 0px 10px 3px rgba(243, 81, 135, 0.603);
-                transition: 300ms linear all;
-              }
+  box-shadow: 0px 0px 4px 1px red, 0px 0px 10px 3px rgba(243, 81, 135, 0.603);
+  transition: 300ms linear all;
+  }
 
   .cs-form-input input:valid, .cs-form-input textarea:valid{
-                  box-shadow: 0px 0px 4px 1px rgb(133, 221, 19), 0px 0px 10px 3px rgba(209, 219, 62, 0.897);
-                  transition: 300ms linear all;
-                }
+    box-shadow: 0px 0px 4px 1px rgb(133, 221, 19), 0px 0px 10px 3px rgba(209, 219, 62, 0.897);
+    transition: 300ms linear all;
+   }
 
               
-   .required:after {
-                     content:" *";
-                     color: red;
-                     display: inline;
-                     font-weight: bold;
-                   }
+.cs-required:after {
+  content:" *";
+  color: red;
+  display: inline;
+  font-weight: bold;
+}
   
-
+.cs-untouched > *:invalid, .cs-untouched *:valid{
+  box-shadow: none !important;
+  transition: 300ms linear all !important;
+} 
               

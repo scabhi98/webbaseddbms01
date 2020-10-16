@@ -123,10 +123,12 @@ myInput.onkeyup = function() {
 }
 
 
+
 //clic dropdown script
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
+/*
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -144,3 +146,10 @@ window.onclick = function(event) {
     }
   }
 }
+*/
+
+let dropdownBtn = document.querySelector('.cs-circular-btn');
+let menuContent = document.querySelector('.cs-dropdown-content');
+dropdownBtn.addEventListener('click',()=>{
+   menuContent.classList.toggle('cs-hide');
+})

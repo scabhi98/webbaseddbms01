@@ -1,6 +1,6 @@
 const GLOBAL_API = {
     app_host: 'http://localhost',
-    port: '8080',
+    port: '8081',
     data_host: 'localhost',
     data_port: '3000'
 };

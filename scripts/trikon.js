@@ -58,6 +58,8 @@ trikon.prepareChildComponents = function (element, component) {
 
         if(childComp.template != null) {
             comp.innerHTML = childComp.template;
+            if( childComp.afterViewParsed)
+                childComp.afterViewParsed(comp);
             parseInterpolatedString(comp, childComp);
             modelBinding(childComp);
         }
@@ -65,6 +67,8 @@ trikon.prepareChildComponents = function (element, component) {
             trikon.ajax({url: childComp.templateUrl}).then(data => {
                 childComp.template = data;
                 comp.innerHTML = data;
+                if( childComp.afterViewParsed)
+                    childComp.afterViewParsed(comp);
                 parseInterpolatedString(comp, childComp);
                 modelBinding(childComp);
             });
@@ -85,12 +89,16 @@ trikon.startApp = function () {
     attachWatches(rootComponent, trikon.update_components);
     if(rootComponent.template != null){
         approot.innerHTML = rootComponent.template;
+        if(rootComponent.afterViewParsed)
+            rootComponent.afterViewParsed(approot);
         initRootComponent(approot, rootComponent);
     }
     else{
         trikon.ajax({url: rootComponent.templateUrl}).then( data => {
             rootComponent.template = data;
             approot.innerHTML = data;
+            if(rootComponent.afterViewParsed)
+                rootComponent.afterViewParsed(approot);
             initRootComponent(approot, rootComponent);
         });
     }
@@ -171,12 +179,12 @@ function attachWatches(component, updated, parent = ''){
 
 function parseInterpolatedString(element, component){
     // var element = component.element;
-    console.log(element);
+    // console.log(element);
     var str = component.template || element.innerHTML;
     var isExpr = false;
     var expr = "";
     var dstr = "";
-    console.log(str);
+    // console.log(str);
     for(var i = 0; i < str.length - 2; i++){
         if(!isExpr){
             if(str.charAt(i) == '{' && str.charAt(i+1) == '{'){
@@ -257,10 +265,14 @@ var route = window.route = function(url,target){
     trikon.components[compkey](comp);
     if(comp.template != null && comp.template != undefined){
         trikon.rootComponent.outlet.innerHTML = comp.template;
+        if(comp.afterViewParsed)
+            comp.afterViewParsed(trikon.rootComponent.outlet);
     }
     else{
         trikon.ajax({url: comp.templateUrl}).then(data => {
             trikon.rootComponent.outlet.innerHTML = comp.template = data;
+            if(comp.afterViewParsed)
+                comp.afterViewParsed(trikon.rootComponent.outlet);
         });
     }
     
